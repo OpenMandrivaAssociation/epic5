@@ -65,7 +65,6 @@ Exec=epic5
 Terminal=true
 Type=Application
 Icon=irc_section
-Encoding=UTF-8
 Categories=Application;Network;IRCClient;
 EOF
 
