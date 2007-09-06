@@ -1,5 +1,5 @@
 Name:           epic5
-Version:        0.3.2
+Version:        0.3.4
 Release:        %mkrel 1
 Epoch:          0
 Summary:        (E)nhanced (P)rogrammable (I)RC-II (C)lient
@@ -93,7 +93,7 @@ EOF
 %doc BUG_FORM COPYRIGHT FILES INSTALL KNOWNBUGS README README-CRYPTO UPDATES VOTES doc/* contrib regress
 %attr(0755,root,root) %{_bindir}/%{name}
 %attr(0755,root,root) %{_bindir}/%{name}-%{version}
-%attr(0755,root,root) %{_bindir}/wserv4
+%attr(0755,root,root) %{_bindir}/epic5-wserv4
 %{_datadir}/applications/%{name}.desktop
 %{_mandir}/man1/%{name}.1*
 %defattr(-,root,root,0755)
