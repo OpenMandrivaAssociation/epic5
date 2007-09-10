@@ -8,7 +8,7 @@ License:        BSD
 URL:            http://www.epicsol.org/
 Source0:        ftp://ftp.epicsol.org:/pub/epic/EPIC5-ALPHA/epic5-%{version}.tar.bz2 
 Source1:        ftp://ftp.epicsol.org/pub/epic/help/epic-help-current.tar.bz2
-Source2:        http://amnesiac.ircii.org/amnesiac1.5r2.tgz
+Source2:        http://amnesiac.ircii.org/ac-snap.tgz
 Patch0:         http://epicsol.org/~jnelson/epic5-0.3.4-patch1
 Requires(post): desktop-file-utils
 Requires(postun): desktop-file-utils
