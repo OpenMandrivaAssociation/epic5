@@ -1,6 +1,6 @@
 Name:           epic5
 Version:        0.3.4
-Release:        %mkrel 2
+Release:        %mkrel 3
 Epoch:          0
 Summary:        (E)nhanced (P)rogrammable (I)RC-II (C)lient
 Group:          Networking/IRC
@@ -8,7 +8,8 @@ License:        BSD
 URL:            http://www.epicsol.org/
 Source0:        ftp://ftp.epicsol.org:/pub/epic/EPIC5-ALPHA/epic5-%{version}.tar.bz2 
 Source1:        ftp://ftp.epicsol.org/pub/epic/help/epic-help-current.tar.bz2
-Source2:        http://amnesiac.ircii.org/amnesiac1.4r2.tar.bz2
+Source2:        http://amnesiac.ircii.org/amnesiac1.5r2.tgz
+Patch0:         http://epicsol.org/~jnelson/epic5-0.3.4-patch1
 Requires(post): desktop-file-utils
 Requires(postun): desktop-file-utils
 #BuildRequires:  dante-devel
@@ -36,7 +37,8 @@ a couple of dozen people.
 
 %prep 
 %setup -q -a 1 -T -b 0
-%{_bindir}/find . -type d -name CVS | %{_bindir}/xargs -t %{__rm} -rf
+%patch0 -p1
+%{_bindir}/find . -type d -name CVS | %{_bindir}/xargs -t %{__rm} -r
 %{__perl} -pi -e 's|/usr/local/bin/perl5|%{__perl}|' regress/crash-irc
 
 %build
@@ -65,11 +67,10 @@ Exec=epic5
 Terminal=true
 Type=Application
 Icon=irc_section
-Categories=Application;Network;IRCClient;
+Categories=Network;IRCClient;
 EOF
 
-%{_bindir}/desktop-file-install --vendor="" \
-  --remove-category="Application" \
+%{_bindir}/desktop-file-install --vendor="mandriva" \
   --add-category="X-MandrivaLinux-Internet-Chat" \
   --dir %{buildroot}%{_datadir}/applications %{name}.desktop
 
@@ -94,9 +95,6 @@ EOF
 %attr(0755,root,root) %{_bindir}/%{name}
 %attr(0755,root,root) %{_bindir}/%{name}-%{version}
 %attr(0755,root,root) %{_bindir}/epic5-wserv4
-%{_datadir}/applications/%{name}.desktop
+%{_datadir}/applications/mandriva-%{name}.desktop
 %{_mandir}/man1/%{name}.1*
-%defattr(-,root,root,0755)
 %{_datadir}/%{name}
-
-
