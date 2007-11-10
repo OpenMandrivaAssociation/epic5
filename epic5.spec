@@ -1,6 +1,6 @@
 Name:           epic5
-Version:        0.3.4
-Release:        %mkrel 4
+Version:        0.3.5
+Release:        %mkrel 1
 Epoch:          0
 Summary:        (E)nhanced (P)rogrammable (I)RC-II (C)lient
 Group:          Networking/IRC
@@ -9,7 +9,6 @@ URL:            http://www.epicsol.org/
 Source0:        ftp://ftp.epicsol.org:/pub/epic/EPIC5-ALPHA/epic5-%{version}.tar.bz2 
 Source1:        ftp://ftp.epicsol.org/pub/epic/help/epic-help-current.tar.bz2
 Source2:        http://amnesiac.ircii.org/ac-snap.tgz
-Patch0:         http://epicsol.org/~jnelson/epic5-0.3.4-patch1
 Requires(post): desktop-file-utils
 Requires(postun): desktop-file-utils
 #BuildRequires:  dante-devel
@@ -37,7 +36,6 @@ a couple of dozen people.
 
 %prep 
 %setup -q -a 1 -T -b 0
-%patch0 -p1
 %{_bindir}/find . -type d -name CVS | %{_bindir}/xargs -t %{__rm} -r
 %{__perl} -pi -e 's|/usr/local/bin/perl5|%{__perl}|' regress/crash-irc
 
