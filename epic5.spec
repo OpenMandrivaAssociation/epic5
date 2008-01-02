@@ -18,6 +18,7 @@ BuildRequires:  openssl-devel
 BuildRequires:  perl-devel
 BuildRequires:  ruby-devel
 BuildRequires:  tcl-devel
+BuildRoot:         %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 EPIC4 is a new direction in ircII development. No longer is EPIC
