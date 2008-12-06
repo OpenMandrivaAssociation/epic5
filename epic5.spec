@@ -10,12 +10,7 @@ Source0:	http://ftp.epicsol.org/pub/epic/EPIC5-BETA/%{name}-%{version}.tar.bz2
 Source1:	ftp://ftp.epicsol.org/pub/epic/help/epic-help-current.tar.bz2
 # Amnesiac 1.5b/rc1 release updated on Aug 30 2008 @ 04:00
 Source2:	http://amnesiac.ircii.org/ac-snap.tgz
-
-Requires(post):		desktop-file-utils
-Requires(postun):	desktop-file-utils
-
 #BuildRequires:  dante-devel
-BuildRequires:	desktop-file-utils
 BuildRequires:	ncurses-devel
 BuildRequires:	openssl-devel
 BuildRequires:	perl-devel
@@ -54,9 +49,6 @@ make wserv_exe=%{_bindir}/wserv4
 
 %{__tar} -xf %{SOURCE2} -C %{buildroot}%{_datadir}/%{name}/script
 %{__chmod} 644 %{buildroot}%{_datadir}/%{name}/script/amn/themes/ansiless.th
-
-%{_bindir}/desktop-file-install --vendor="mandriva" \
-  --dir %{buildroot}%{_datadir}/applications %{name}.desktop
 
 %clean
 %{__rm} -rf %{buildroot}
