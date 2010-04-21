@@ -1,6 +1,6 @@
 Name:		epic5
 Version:	0.9.0
-Release:	%mkrel 2
+Release:	%mkrel 3
 Epoch:		0
 Summary:	(E)nhanced (P)rogrammable (I)RC-II (C)lient
 Group:		Networking/IRC
