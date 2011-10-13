@@ -1,16 +1,17 @@
 Name:		epic5
-Version:	0.9.0
-Release:	%mkrel 4
+Version:	1.1.2
+Release:	%mkrel 1
 Epoch:		0
 Summary:	(E)nhanced (P)rogrammable (I)RC-II (C)lient
 Group:		Networking/IRC
 License:	BSD
 URL:		http://www.epicsol.org/
-Source0:	http://ftp.epicsol.org/pub/epic/EPIC5-BETA/%{name}-%{version}.tar.bz2
+Source0:	http://ftp.epicsol.org/pub/epic/EPIC5-PRODUCTION/%{name}-%{version}.tar.bz2
 Source1:	ftp://ftp.epicsol.org/pub/epic/help/epic-help-current.tar.bz2
-# Amnesiac 1.5b/rc1 release updated on Aug 30 2008 @ 04:00
-Source2:	http://amnesiac.ircii.org/ac-snap.tgz
+# Amnesiac 2.0.2 release updated on Jul 26 2010 @ 20:09
+Source2:	http://amnesiac.ircii.org/amnesiac2.0.2cvs51.tgz
 #BuildRequires:  dante-devel
+BuildRequires:	libarchive-devel
 BuildRequires:	ncurses-devel
 BuildRequires:	openssl-devel
 BuildRequires:	perl-devel
@@ -61,3 +62,4 @@ make wserv_exe=%{_bindir}/wserv4
 %attr(0755,root,root) %{_bindir}/epic5-wserv4
 %{_mandir}/man1/%{name}.1*
 %{_datadir}/%{name}
+
