@@ -63,3 +63,90 @@ make wserv_exe=%{_bindir}/wserv4
 %{_mandir}/man1/%{name}.1*
 %{_datadir}/%{name}
 
+
+
+%changelog
+* Thu Oct 13 2011 Andrey Bondrov <abondrov@mandriva.org> 0:1.1.2-1mdv2011.0
++ Revision: 704598
+- New version: 1.1.2
+
+* Sun Dec 05 2010 Oden Eriksson <oeriksson@mandriva.com> 0:0.9.0-4mdv2011.0
++ Revision: 610381
+- rebuild
+
+* Wed Apr 21 2010 Funda Wang <fwang@mandriva.org> 0:0.9.0-3mdv2010.1
++ Revision: 537453
+- rebuild
+
+* Thu Sep 10 2009 Thierry Vignaud <tv@mandriva.org> 0:0.9.0-2mdv2010.0
++ Revision: 437470
+- rebuild
+
+* Sat Dec 06 2008 Adam Williamson <awilliamson@mandriva.org> 0:0.9.0-1mdv2009.1
++ Revision: 311082
+- finish dropping the menu entry
+- rebuild for new tcl
+- drop the menu entry, it's a console app
+- drop parallel build, it breaks
+- update the description, which was still talking about epic4
+- add the amnesiac version info as a comment as you can't tell from file name
+- new release 0.9.0
+- spec clean
+
+* Thu Jul 24 2008 Thierry Vignaud <tv@mandriva.org> 0:0.3.5-3mdv2009.0
++ Revision: 244929
+- rebuild
+- kill re-definition of %%buildroot on Pixel's request
+
+  + Olivier Blin <blino@mandriva.org>
+    - restore BuildRoot
+
+* Sat Nov 10 2007 David Walluck <walluck@mandriva.org> 0:0.3.5-1mdv2008.1
++ Revision: 107318
+- 0.3.5
+
+* Mon Sep 10 2007 David Walluck <walluck@mandriva.org> 0:0.3.4-4mdv2008.0
++ Revision: 83969
+- bump release
+- ship the amnesiac snapshot for this epic version
+
+* Mon Sep 10 2007 David Walluck <walluck@mandriva.org> 0:0.3.4-3mdv2008.0
++ Revision: 83960
+- include hook bugfix from hop
+- update amnesiac to 1.5r2
+- do not force removal of CVS dirs
+- remove Application category from desktop menu
+- set vendor for desktop menu
+- fix amnesiac perms to be world readable
+
+* Fri Sep 07 2007 Anssi Hannula <anssi@mandriva.org> 0:0.3.4-2mdv2008.0
++ Revision: 82012
+- rebuild for new soname of tcl
+
+* Thu Sep 06 2007 Nicolas Vigier <nvigier@mandriva.com> 0:0.3.4-1mdv2008.0
++ Revision: 81078
+- new version
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - kill desktop-file-validate's 'warning: key "Encoding" in group "Desktop Entry" is deprecated'
+
+
+* Sun Feb 04 2007 David Walluck <walluck@mandriva.org> 0.3.2-1mdv2007.0
++ Revision: 116124
+- 0.3.2
+
+* Fri Oct 27 2006 David Walluck <walluck@mandriva.org> 0:0.3.1-3mdv2007.1
++ Revision: 72938
+- include amnesiac 1.4r2
+
+* Fri Oct 27 2006 David Walluck <walluck@mandriva.org> 0:0.3.1-2mdv2007.1
++ Revision: 72921
+- fix summary, description, and menu summary
+
+* Fri Oct 27 2006 David Walluck <walluck@mandriva.org> 0:0.3.1-1mdv2007.0
++ Revision: 72913
+- Import epic5
+
+* Thu Oct 26 2006 David Walluck <walluck@mandriva.org> 0:0.3.1-1mdv2007.1
+- release
+
