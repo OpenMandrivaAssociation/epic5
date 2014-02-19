@@ -9,6 +9,7 @@ Source0:	http://ftp.epicsol.org/pub/epic/EPIC5-PRODUCTION/%{name}-%{version}.tar
 Source1:	ftp://ftp.epicsol.org/pub/epic/help/epic-help-current.tar.gz
 # Amnesiac 2.0.2 release updated on Jul 26 2010 @ 20:09
 Source2:	http://amnesiac.ircii.org/amnesiac2.0.2cvs51.tgz
+Source10:	%{name}.rpmlintrc
 BuildRequires:	perl-devel
 BuildRequires:	ruby-devel
 BuildRequires:	tcl-devel
