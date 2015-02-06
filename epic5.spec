@@ -1,7 +1,7 @@
 Summary:	(E)nhanced (P)rogrammable (I)RC-II (C)lient
 Name:		epic5
 Version:	1.1.6
-Release:	1
+Release:	2
 License:	BSD
 Group:		Networking/IRC
 Url:		http://www.epicsol.org/
