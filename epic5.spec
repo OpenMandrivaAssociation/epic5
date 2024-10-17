@@ -4,7 +4,7 @@ Version:	1.1.6
 Release:	2
 License:	BSD
 Group:		Networking/IRC
-Url:		http://www.epicsol.org/
+Url:		https://www.epicsol.org/
 Source0:	http://ftp.epicsol.org/pub/epic/EPIC5-PRODUCTION/%{name}-%{version}.tar.bz2
 Source1:	ftp://ftp.epicsol.org/pub/epic/help/epic-help-current.tar.gz
 # Amnesiac 2.0.2 release updated on Jul 26 2010 @ 20:09
